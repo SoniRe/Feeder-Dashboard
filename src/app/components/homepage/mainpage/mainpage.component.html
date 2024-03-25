@@ -1,0 +1,223 @@
+<div class="min-h-96 w-full bg-[#F0F8FF] p-4">
+  <div
+    class="w-full h-32 bg-white rounded-2xl flex justify-center items-center gap-16"
+  >
+    <div class="w-44">
+      <h1 class="text-[#969696] text-lg mb-4">Zone</h1>
+
+      <div
+        class="rounded-lg border-2 border-strokeColor py-1 px-2 flex justify-between cursor-pointer shadow-sm"
+      >
+        <span>{{ zone }}</span>
+        <i class="ri-arrow-down-s-line text-xl"></i>
+      </div>
+
+      <ul class="relative px-1 mt-2 bg-white hidden">
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Noida
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Delhi
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Jammu
+        </li>
+      </ul>
+    </div>
+
+    <div class="w-44">
+      <h1 class="text-[#969696] text-lg mb-4">Circle</h1>
+
+      <div
+        class="rounded-lg border-2 border-strokeColor py-1 px-2 flex justify-between cursor-pointer shadow-sm"
+      >
+        <span>{{ circle }}</span>
+        <i class="ri-arrow-down-s-line text-xl"></i>
+      </div>
+
+      <ul class="relative px-1 mt-2 bg-white hidden">
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Noida
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Delhi
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Jammu
+        </li>
+      </ul>
+    </div>
+
+    <div class="w-44">
+      <h1 class="text-[#969696] text-lg mb-4">Division</h1>
+
+      <div
+        class="rounded-lg border-2 border-strokeColor py-1 px-2 flex justify-between cursor-pointer shadow-sm"
+      >
+        <span>{{ division }}</span>
+        <i class="ri-arrow-down-s-line text-xl"></i>
+      </div>
+
+      <ul class="relative px-1 mt-2 bg-white hidden">
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Noida
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Delhi
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Jammu
+        </li>
+      </ul>
+    </div>
+
+    <div class="w-44">
+      <h1 class="text-[#969696] text-lg mb-4">SubDivision</h1>
+
+      <div
+        class="rounded-lg border-2 border-strokeColor py-1 px-2 flex justify-between cursor-pointer shadow-sm"
+      >
+        <span>{{ subDivision }}</span>
+        <i class="ri-arrow-down-s-line text-xl"></i>
+      </div>
+
+      <ul class="relative px-1 mt-2 bg-white hidden">
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Noida
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Delhi
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Jammu
+        </li>
+      </ul>
+    </div>
+
+    <div class="w-44">
+      <h1 class="text-[#969696] text-lg mb-4">SubStation</h1>
+
+      <div
+        class="rounded-lg border-2 border-strokeColor py-1 px-2 flex justify-between cursor-pointer shadow-sm"
+      >
+        <span>{{ subStation }}</span>
+        <i class="ri-arrow-down-s-line text-xl"></i>
+      </div>
+
+      <ul class="relative px-1 mt-2 bg-white hidden">
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Noida
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Delhi
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Jammu
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mt-4 flex gap-5">
+    <app-card
+      title="Energy Consumption"
+      value="4800 kWh"
+      colorClass="bg-[#FCD67F]"
+    ></app-card>
+    <app-card
+      title="Maximum Demand"
+      value="690 kVA"
+      colorClass="bg-[#A1A7FF]"
+    ></app-card>
+    <app-card
+      title="Total Outages"
+      value="530"
+      colorClass="bg-[#68FFCA]"
+    ></app-card>
+    <app-card
+      title="Avg Outage Duration"
+      value="30 mins"
+      colorClass="bg-[#85CEFF]"
+    ></app-card>
+    <app-card
+      title="Faults in Last 24 hrs"
+      value="12"
+      colorClass="bg-[#FF8A67]"
+    ></app-card>
+  </div>
+
+  <div class="mt-4 w-full h-96 flex justify-between items-center">
+    <div
+      class="w-[34vw] bg-white h-full rounded-xl flex flex-col justify-center gap-4 pl-10 py-4"
+    >
+      <h1 class="text-2xl font-bold text-dark ml-7">Feeder Status Live</h1>
+      <div class="h-full w-full flex items-center gap-12">
+        <app-feederchart></app-feederchart>
+
+        <div class="flex flex-col gap-3">
+          <div>
+            <h1 class="text-muted">Online Feeders</h1>
+            <h2 class="text-dark font-semibold">18,000</h2>
+            <div class="mt-2 h-3 w-32 rounded-full bg-[#8BFF98]"></div>
+          </div>
+
+          <div>
+            <h1 class="text-muted">Modem Disconnect</h1>
+            <h2 class="text-dark font-semibold">2,000</h2>
+            <div class="mt-2 h-3 w-20 rounded-full bg-[#FFFF8B]"></div>
+          </div>
+
+          <div>
+            <h1 class="text-muted">Offline Feeders</h1>
+            <h2 class="text-dark font-semibold">1,308</h2>
+            <div class="mt-2 h-3 w-14 rounded-full bg-[#FF8B8B]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-[45vw] bg-white h-full rounded-xl">
+      <app-mapchart></app-mapchart>
+    </div>
+  </div>
+
+  <div class="mt-4 w-full h-[60vh] flex justify-between items-center">
+    <div class="w-[38.5vw] bg-white h-full rounded-xl">
+      <app-linechart></app-linechart>
+    </div>
+
+    <div class="w-[40.5vw] bg-white h-full rounded-xl">
+      <app-barchart></app-barchart>
+    </div>
+  </div>
+</div>

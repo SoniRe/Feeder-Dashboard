@@ -1,0 +1,82 @@
+<div
+  class="relative h-full w-[19.8vw] bg-white rounded-xl border-strokeColor border-2"
+>
+  <div class="flex w-full justify-between p-4">
+    <div>
+      <h3 class="text-lg font-semibold">{{ name }}</h3>
+      <h1 class="text-4xl font-medium">{{ totalFeeder }}</h1>
+    </div>
+
+    <div class="w-20">
+      <div
+        class="rounded-lg border-2 border-strokeColor py-1 px-2 flex justify-between cursor-pointer shadow-sm"
+      >
+        <span>All</span>
+        <i class="ri-arrow-down-s-line text-xl"></i>
+      </div>
+
+      <ul class="relative px-1 mt-2 bg-white hidden">
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Noida
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Delhi
+        </li>
+        <li
+          class="hover:bg-slate-300 hover:text-white py-1 px-2 rounded-sm cursor-pointer"
+        >
+          Jammu
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="absolute top-0 left-0 h-full w-full">
+    <div
+      #myFirstPieChart
+      class="z-10 absolute bottom-20 right-2 h-56 w-56"
+    ></div>
+    <h1 class="absolute z-20 top-40 right-16 text-5xl font-semibold text-white">
+      {{ activeFeeder }}
+    </h1>
+
+    <div
+      #mySecondPieChart
+      class="z-30 absolute bottom-24 left-0 h-40 w-40"
+    ></div>
+    <h1 class="absolute z-40 top-52 left-12 text-4xl font-semibold text-white">
+      {{ disconnectFeeder }}
+    </h1>
+
+    <div
+      #myThirdPieChart
+      class="z-20 absolute bottom-10 right-16 h-32 w-32"
+    ></div>
+    <h1
+      class="absolute z-30 bottom-20 right-28 text-3xl font-semibold text-white"
+    >
+      {{ downFeeder }}
+    </h1>
+  </div>
+
+  <div class="absolute bottom-0 h-10 w-full flex justify-between px-2">
+    <div class="flex gap-1 justify-center items-center">
+      <div class="h-3 w-6 rounded-full bg-[#C084FC]"></div>
+      <p>Active</p>
+    </div>
+
+    <div class="flex gap-1 justify-center items-center">
+      <div class="h-3 w-6 rounded-full bg-[#2563EB]"></div>
+      <p>Disconnect</p>
+    </div>
+
+    <div class="flex gap-1 justify-center items-center">
+      <div class="h-3 w-6 rounded-full bg-[#FB923C]"></div>
+      <p>Down</p>
+    </div>
+  </div>
+</div>

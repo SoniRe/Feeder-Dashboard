@@ -1,0 +1,14 @@
+<div
+  class="w-full h-14 flex justify-center items-center border-b border-strokeColor"
+>
+  <h3 class="font-bold text-dark text-lg">{{ menuService.currentMenu() }}</h3>
+  <div class="bg-[#F6F6F6] py-2 px-4 w-64 rounded-2xl absolute top-2 right-5">
+    <i class="ri-search-line text-[#747487] cursor-pointer"></i>
+    <input
+      class="bg-[#F6F6F6] ml-2 text-[#747487] focus:outline-none"
+      placeholder="Search for feeder"
+      type="text"
+      [formControl]="feeder"
+    />
+  </div>
+</div>

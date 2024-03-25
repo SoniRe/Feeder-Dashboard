@@ -1,0 +1,86 @@
+<div
+  id="sidebar"
+  class="h-full w-64 border-r-2 border-strokeColor flex flex-col p-4 items-center"
+>
+  <div class="w-full flex justify-between items-center">
+    <div [class.hidden]="!menuService.showMenu()">
+      <h1 class="text-2xl text-dark font-bold">Xenius</h1>
+      <p class="text-xs -mt-1 text-dark">Admin Pannel</p>
+    </div>
+    <i
+      class="ri-menu-2-line text-[#A8A8B4] text-2xl cursor-pointer hover:text-primary hover:rounded-full"
+      (click)="menuService.toggleMenu()"
+    ></i>
+  </div>
+
+  <img
+    class="h-36 w-36 mt-10"
+    src="./../../../../assets/images/logo-removedbg.png"
+    alt=""
+    [class.hidden]="!menuService.showMenu()"
+  />
+
+  <div class="h-36 w-36 mt-10" [class.hidden]="menuService.showMenu()"></div>
+
+  <div class="flex gap-3 w-full shadow-md shadow-slate-300 mt-4 p-2">
+    <img
+      class="h-10 w-10 rounded-full object-cover object-center"
+      src="./../../../../assets/images/user-image.jpg"
+      alt=""
+    />
+    <div [class.hidden]="!menuService.showMenu()">
+      <h1 class="text-base text-dark font-semibold">Aditya Verma</h1>
+      <p class="text-xs text-muted -mt-1">Admin</p>
+    </div>
+  </div>
+
+  <div class="w-full">
+    <a
+      routerLink="/dashboard/mainpage"
+      (click)="menuService.changeMenu('Dashboard')"
+    >
+      <app-menu-item
+        icon="ri-home-line"
+        name="Dashboard"
+        pageName="Dashboard"
+      ></app-menu-item>
+    </a>
+
+    <a
+      routerLink="/dashboard/feederlistpage"
+      (click)="menuService.changeMenu('Feeder Details')"
+    >
+      <app-menu-item
+        icon="ri-pie-chart-line"
+        name="Feeder Details"
+        pageName="Feeder Details"
+      ></app-menu-item>
+    </a>
+
+    <app-menu-item
+      icon="ri-thunderstorms-line"
+      name="Planned Outage Details"
+    ></app-menu-item>
+
+    <app-menu-item icon="ri-folder-chart-line" name="Report"></app-menu-item>
+
+    <app-menu-item
+      icon="ri-alarm-warning-line"
+      name="Report MIS"
+    ></app-menu-item>
+  </div>
+
+  <button
+    [class.hidden]="!menuService.showMenu()"
+    class="text-white bg-primary w-full h-10 rounded-lg mt-16 hover:bg-white hover:text-primary hover:border hover:border-primary"
+  >
+    Logout <i class="ri-arrow-right-line ml-3"></i>
+  </button>
+
+  <button
+    [class.hidden]="menuService.showMenu()"
+    class="text-white bg-primary w-full h-10 rounded-lg mt-16 hover:bg-white hover:text-primary hover:border hover:border-primary"
+  >
+    <i class="ri-arrow-right-line ml-3"></i>
+  </button>
+</div>

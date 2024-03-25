@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  th {
+    @apply p-4 border border-strokeColor bg-strokeColor;
+  }
+
+  td,
+  tr {
+    @apply border border-strokeColor p-4 text-center text-dark;
+  }
+}
